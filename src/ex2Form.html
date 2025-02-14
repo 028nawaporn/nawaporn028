@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มลงทะเบียนศิษย์เก่า IT+IS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-pink-100 to-pink-300 text-black min-h-screen flex flex-col justify-center items-center">
+    <h1 class="text-4xl font-semibold text-pink-700 shadow-lg mt-8">แบบฟอร์มลงทะเบียนศิษย์เก่า IT+IS</h1>
+    <form action="https://example.com/" method="get" class="w-full max-w-lg bg-pink-50 p-6 mt-6 rounded-lg shadow-xl">
+        <div class="mb-4">
+            <label for="first-name" class="block font-bold mb-2">ชื่อ</label>
+            <input type="text" name="first-name" id="first-name" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="last-name" class="block font-bold mb-2">นามสกุล</label>
+            <input type="text" name="last-name" id="last-name" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="id" class="block font-bold mb-2">รหัสนักศึกษา</label>
+            <input type="text" name="id" id="id" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label class="block font-bold mb-2">เพศ</label>
+            <div class="flex items-center">
+                <input type="radio" name="gender" value="1" class="mr-2" /> ผู้ชาย
+                <input type="radio" name="gender" value="2" class="mr-2" /> ผู้หญิง
+                <input type="radio" name="gender" value="3" class="mr-2" /> ไม่ระบุ
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="year" class="block font-bold mb-2">ปีการศึกษาที่เข้าศึกษา</label>
+            <input type="text" name="year" id="year" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+
+        <h3 class="text-2xl font-semibold text-pink-700 mt-6">ที่อยู่ปัจจุบัน</h3>
+        <div class="mb-4">
+            <label for="street" class="block font-bold mb-2">ที่อยู่ (ถนน):</label>
+            <input type="text" name="street" id="street" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="subdistrict" class="block font-bold mb-2">ตำบล/แขวง:</label>
+            <input type="text" name="subdistrict" id="subdistrict" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="district" class="block font-bold mb-2">อำเภอ/เขต:</label>
+            <input type="text" name="district" id="district" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="province" class="block font-bold mb-2">จังหวัด:</label>
+            <input type="text" name="province" id="province" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="zipcode" class="block font-bold mb-2">รหัสไปรษณีย์:</label>
+            <input type="text" name="zipcode" id="zipcode" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block font-bold mb-2">อีเมล</label>
+            <input type="email" name="email" id="email" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="number" class="block font-bold mb-2">เบอร์โทรติดต่อ</label>
+            <input type="tel" name="number" id="number" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+
+        <h3 class="text-2xl font-semibold text-pink-700 mt-6">ข้อมูลการศึกษา</h3>
+        <div class="mb-4">
+            <label class="block font-bold mb-2">ชื่อหลักสูตร</label>
+            <div class="flex items-center">
+                <input type="radio" name="course" value="1" class="mr-2" /> IT
+                <input type="radio" name="course" value="2" class="mr-2" /> IS
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="work" class="block font-bold mb-2">อาชีพปัจจุบัน</label>
+            <textarea name="work" id="work" cols="30" rows="3" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg"></textarea>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-pink-700 mt-6">ข้อมูลสถานที่ทำงาน</h3>
+        <div class="mb-4">
+            <label for="company_name" class="block font-bold mb-2">ชื่อบริษัท:</label>
+            <input type="text" name="company_name" id="company_name" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="job_title" class="block font-bold mb-2">ตำแหน่งงาน:</label>
+            <input type="text" name="job_title" id="job_title" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_phone" class="block font-bold mb-2">เบอร์โทรศัพท์ที่ทำงาน:</label>
+            <input type="tel" name="work_phone" id="work_phone" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_email" class="block font-bold mb-2">อีเมลที่ทำงาน:</label>
+            <input type="email" name="work_email" id="work_email" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+
+        <h3 class="text-2xl font-semibold text-pink-700 mt-6">ที่อยู่ที่ทำงาน</h3>
+        <div class="mb-4">
+            <label for="work_street" class="block font-bold mb-2">ที่อยู่ (ถนน):</label>
+            <input type="text" name="work_street" id="work_street" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_subdistrict" class="block font-bold mb-2">ตำบล/แขวง:</label>
+            <input type="text" name="work_subdistrict" id="work_subdistrict" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_district" class="block font-bold mb-2">อำเภอ/เขต:</label>
+            <input type="text" name="work_district" id="work_district" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_province" class="block font-bold mb-2">จังหวัด:</label>
+            <input type="text" name="work_province" id="work_province" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+        <div class="mb-4">
+            <label for="work_zipcode" class="block font-bold mb-2">รหัสไปรษณีย์:</label>
+            <input type="text" name="work_zipcode" id="work_zipcode" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+
+        <div class="mb-4">
+            <label for="job" class="block font-bold mb-2">ประเภทงาน:</label>
+            <select name="job" id="job" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg">
+                <option value="web-developer">Web Developer</option>
+                <option value="sa">SA</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="other">งานอื่นๆ</option>
+            </select>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-pink-700 mt-6">อัปโหลดรูปถ่าย</h3>
+        <div class="mb-4">
+            <label for="photo" class="block font-bold mb-2">เลือกรูปถ่าย:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" class="w-full p-3 border-2 border-pink-500 rounded-lg text-lg" />
+        </div>
+
+        <div class="flex justify-center space-x-4">
+            <input type="submit" value="Submit" class="px-6 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 cursor-pointer transition-transform transform hover:scale-105" />
+            <input type="reset" value="Reset" class="px-6 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 cursor-pointer transition-transform transform hover:scale-105" />
+        </div>
+
+        <a href="./index.html" class="text-pink-700 mt-6 inline-block hover:text-pink-800">กลับหน้าหลัก</a>
+    </form>
+</body>
+</html>
